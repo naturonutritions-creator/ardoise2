@@ -57,11 +57,12 @@ Voir `.env.example`. À configurer pour une mise en production réelle :
 | `STRIPE_SECRET_KEY` | Clé secrète Stripe (test puis live) |
 | `STRIPE_WEBHOOK_SECRET` | Secret du endpoint webhook Stripe |
 | `STRIPE_PRICE_MENSUEL` / `_ANNUEL` / `_FAMILLE` | IDs des Price Stripe pour chaque offre |
+| `SMTP_HOST` / `_PORT` / `_USER` / `_PASSWORD` / `_FROM` | Envoi des emails de réinitialisation de mot de passe. Sans ces variables, le lien est simplement affiché dans les logs serveur (utile en démo/dev). |
 
 ## Base de données
 
 Le schéma est défini dans `src/lib/db/schema.ts` (`users`, `subscriptions`,
-`progressions`). Pour créer/mettre à jour les tables une fois `DATABASE_URL` configurée :
+`progressions`, `purchases`, `passwordResetTokens`). Pour créer/mettre à jour les tables une fois `DATABASE_URL` configurée :
 
 ```bash
 npm run db:generate   # génère les migrations SQL à partir du schéma

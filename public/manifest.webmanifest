@@ -1,0 +1,14 @@
+{
+  "name": "Cap Réussite — Soutien scolaire",
+  "short_name": "Cap Réussite",
+  "description": "Le soutien scolaire aligné sur le programme officiel, du CP à la Terminale.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F9F7F2",
+  "theme_color": "#1B2733",
+  "lang": "fr",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
